@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>YT Ad Video ID Finder</title>
+</head>
+
+<body>
+  <div class="content-box">
+    <h1>YT Ad Video ID Finder</h1>
+    <ol>
+      <li>Right Click on YT Ad Video</li>
+      <li>Select Copy Debug Info</li>
+      <li>Paste the Debug Info in box below</li>
+      <li>Watch ad below or click the link to open it in a new tab.</li>
+    </ol>
+  </div>
+  <div class="content-box">
+    <input id="textbox" type="textarea" placeholder="Paste Debug Info Here" />
+    <p id="status-text"></p>
+    <div>
+      <a href="" id="yt-link" target="_blank"></a>
+    </div>
+    <div>
+      <iframe id="embedded-video" width="560" height="315" src="" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
