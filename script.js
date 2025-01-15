@@ -2,6 +2,7 @@ const ytLink = document.getElementById("yt-link");
 const embeddedVideo = document.getElementById("embedded-video");
 const statusText = document.getElementById("status-text");
 
+embeddedVideo.style.display = "none";
 
 
 
