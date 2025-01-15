@@ -5,29 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/webfonts/herd-extra-black-italic.css">
   <title>YT Ad Video ID Finder</title>
 </head>
 
 <body>
-  <div class="content-box">
-    <h1>YT Ad Video ID Finder</h1>
-    <ol>
-      <li>Right Click on YT Ad Video</li>
-      <li>Select Copy Debug Info</li>
-      <li>Paste the Debug Info in box below</li>
-      <li>Watch ad below or click the link to open it in a new tab.</li>
-    </ol>
+  <!-- <div class="header">
+    <h1>SAVETHAT.AD</h1>
+    <p class="beta-tag green" style="display: inline;">BETA</p>
+  </div>
+  <div class="powered-by">
+    <p>POWERED BY <span class="syncbeast badger">SYNCBEAST</span></p>
+  </div> -->
+  <div class="header">
+    <img src="./assets/SaveThat.Ad Header 4x.png" alt="SaveThat.Ad Header">
   </div>
   <div class="content-box">
+    <ol>
+      <li>Right click on YT video</li>
+      <li>Copy Debug Info</li>
+      <li>Paste Debug Info below</li>
+    </ol>
     <input id="textbox" type="textarea" placeholder="Paste Debug Info Here" />
     <p id="status-text"></p>
     <div>
       <a href="" id="yt-link" target="_blank"></a>
     </div>
+  </div>
+  <div class="content-box">
     <div>
       <iframe id="embedded-video" width="560" height="315" src="" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="content-box footer">
+      <h3 class="badger">SB</h3>
+      <p>© 2025 Sync Beast LLC | Privacy Policy</p>
     </div>
   </div>
   <script src="/script.js"></script>
