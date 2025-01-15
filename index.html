@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./assets/webfonts/herd-extra-black-italic.css">
-  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
   <title>SAVETHAT.AD</title>
 </head>
 
@@ -15,29 +19,37 @@
   <div class="header">
     <img src="./assets/SaveThat.Ad Header 4x.png" alt="SaveThat.Ad Header">
   </div>
-  <div class="content-box">
-    <ol class="inter-normal">
-      <li>Right click on YT video</li>
-      <li>Copy Debug Info</li>
-      <li>Paste Debug Info below</li>
-    </ol>
-    <input id="textbox" type="textarea" placeholder="Paste Debug Info Here" />
-    <p id="status-text" class="inter-normal"></p>
-    <div>
-      <a href="" id="yt-link" target="_blank" class="inter-normal"></a>
+  <div id="mobile-version">
+    <h2 class="inter-normal">Not available for mobile at this time.</h2>
+    <h3 class="inter-normal">Use the desktop version.</h2>
+  </div>
+  <div id="desktop-version">
+    <div class="content-box">
+      <ol class="inter-normal">
+        <li>Right click on YT video</li>
+        <li>Copy Debug Info</li>
+        <li>Paste Debug Info below</li>
+      </ol>
+      <input id="textbox" type="textarea" placeholder="Paste Debug Info Here" />
+      <p id="status-text" class="inter-normal"></p>
+      <div>
+        <a href="" id="yt-link" target="_blank" class="inter-normal"></a>
+      </div>
+    </div>
+    <div class="content-box">
+      <div>
+        <iframe id="embedded-video" width="560" height="315" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p id="video-unavailable" class="inter-normal">*If video is unavailable, click the link above it.</p>
     </div>
   </div>
-  <div class="content-box">
-    <div>
-      <iframe id="embedded-video" width="560" height="315" src="" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
     <div class="content-box footer">
       <h3 class="badger">SB</h3>
       <p class="inter-normal">© 2025 Sync Beast LLC | Privacy Policy</p>
     </div>
-  </div>
+  
   <script src="/script.js"></script>
 </body>
 

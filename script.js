@@ -1,9 +1,10 @@
 const ytLink = document.getElementById("yt-link");
 const embeddedVideo = document.getElementById("embedded-video");
 const statusText = document.getElementById("status-text");
+const videoUnavailable = document.getElementById("video-unavailable");
 
 embeddedVideo.style.display = "none";
-
+videoUnavailable.style.display = "none";
 
 
 function handlePaste(event) {
@@ -36,6 +37,7 @@ function handlePaste(event) {
       ytLink.href = `https://www.youtube.com/watch?v=${jsonData.addebug_videoId}`;
       embeddedVideo.src = `https://www.youtube.com/embed/${jsonData.addebug_videoId}`;
       embeddedVideo.style.display = "block";
+      videoUnavailable.style.display = "block";
     }
   } catch (e) {
     console.log("It's not parsable!");
