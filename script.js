@@ -24,6 +24,7 @@ function handlePaste(event) {
       ytLink.text = "";
       ytLink.href = "";
       embeddedVideo.src = "";
+      embeddedVideo.style.display = "none";
 
       return;
     } else {
@@ -33,6 +34,7 @@ function handlePaste(event) {
       ytLink.text = `https://www.youtube.com/watch?v=${jsonData.addebug_videoId}`;
       ytLink.href = `https://www.youtube.com/watch?v=${jsonData.addebug_videoId}`;
       embeddedVideo.src = `https://www.youtube.com/embed/${jsonData.addebug_videoId}`;
+      embeddedVideo.style.display = "block";
     }
   } catch (e) {
     console.log("It's not parsable!");
@@ -41,6 +43,7 @@ function handlePaste(event) {
     ytLink.text = "";
       ytLink.href = "";
       embeddedVideo.src = "";
+      embeddedVideo.style.display = "none";
   }
 }
 

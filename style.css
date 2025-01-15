@@ -3,7 +3,8 @@
   src: url("./assets/Badger.otf");
 }
 
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -14,14 +15,23 @@ body {
   color: #f5f5f5;
   padding: 0;
   margin: 0;
-  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
+}
+
+
+
+.inter-normal {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header {
   width: 40%;
   text-align: center;
   margin: auto;
+  margin-top: 50px;
+
 }
 
 img {
@@ -41,9 +51,8 @@ h1 {
 }
 
 .content-box {
-  margin: auto;
+  margin: 5px auto;
   width: 50%;
-  padding: 16px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -56,21 +65,43 @@ input {
   border: 1px solid #333;
   padding: 8px;
   border-radius: 4px;
-  width: 20%;
+  width: 300px;
 }
 
 #status-text {
-  display: inline;
+  font-size: 1rem;
+  
+}
+
+#yt-link {
+  font-size: 1rem;
+  display: none;
 }
 
 a {
-  color: white
+  color: #f5f5f5
 }
 
 a.visited {
-  color: white;
+  color: #f5f5f5;
+}
+
+iframe {
+  box-shadow: 0px 0px 5px 1px #ffffff42;
+  margin-top: 5px;
+  border-radius: 10px;
 }
 
 .footer {
   color: #383838;
+  margin-top: 100px;
+}
+
+.footer h3 {
+  margin-bottom: 0;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-top: 2px;
 }
