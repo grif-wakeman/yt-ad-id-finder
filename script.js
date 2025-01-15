@@ -44,9 +44,9 @@ function handlePaste(event) {
     statusText.innerHTML = `Error: Incorrect paste. Did you copy the Debug Info?`;
     statusText.style.color = "red";
     ytLink.text = "";
-      ytLink.href = "";
-      embeddedVideo.src = "";
-      embeddedVideo.style.display = "none";
+    ytLink.href = "";
+    embeddedVideo.src = "";
+    embeddedVideo.style.display = "none";
   }
 }
 
