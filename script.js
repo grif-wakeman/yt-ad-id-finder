@@ -31,7 +31,7 @@ function handlePaste(event) {
     } else {
       console.log(jsonData.addebug_videoId);
       statusText.innerHTML = "Success!";
-      statusText.style.color = "#50a150";
+      statusText.style.color = "#2DAF9B";
       ytLink.text = `https://www.youtube.com/watch?v=${jsonData.addebug_videoId}`;
       ytLink.href = `https://www.youtube.com/watch?v=${jsonData.addebug_videoId}`;
       embeddedVideo.src = `https://www.youtube.com/embed/${jsonData.addebug_videoId}`;
